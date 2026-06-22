@@ -23,7 +23,7 @@ export const SITE_CONFIG = {
       'You combine proven expertise with personalised guidance to deliver real, lasting results tailored to each client.',
       'Your consultations have helped clients resolve challenges in career, relationships, health, and business — providing clarity and confidence.',
     ],
-    image:    'homeImg2.jpeg',              // path inside /public
+    image:    'favicon.ico',              // path inside /public
     imageAlt: 'Your Name - Your Business Name',
     expertise: [
       'Expertise Area 1',
@@ -77,11 +77,11 @@ export const SITE_CONFIG = {
   },
 
   // ── Ticker (top scrolling bar) ────────────────────────────────
-  ticker: [
-    '✅ 100% Genuine Guidance',
-    '⭐ 1000+ Happy Clients',
-    '🔒 Confidential Consultation',
-  ],
+  // ticker: [
+  //   '✅ 100% Genuine Guidance',
+  //   '⭐ 1000+ Happy Clients',
+  //   '🔒 Confidential Consultation',
+  // ],
 
   // ── Stats ────────────────────────────────────────────────────
   stats: [

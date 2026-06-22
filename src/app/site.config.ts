@@ -77,11 +77,11 @@ export const SITE_CONFIG = {
   },
 
   // ── Ticker (top scrolling bar) ────────────────────────────────
-  // ticker: [
-  //   '✅ 100% Genuine Guidance',
-  //   '⭐ 1000+ Happy Clients',
-  //   '🔒 Confidential Consultation',
-  // ],
+  ticker: [
+    'XYZ',
+    'XYZ',
+    'XYZ',
+  ],
 
   // ── Stats ────────────────────────────────────────────────────
   stats: [

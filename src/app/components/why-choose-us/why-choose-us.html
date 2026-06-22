@@ -1,0 +1,34 @@
+<section class="why-choose-us">
+  <div class="why-container">
+    <div class="section-header">
+      <span class="section-eyebrow">✦ Why Choose Us ✦</span>
+      <h2>Why Choose {{ config.business.shortName }}?</h2>
+      <p class="subtitle">Your Trust is Our Greatest Achievement</p>
+    </div>
+
+    <div class="reasons-grid">
+      @for (reason of reasons; track reason.title) {
+        <div class="reason-card">
+          <div class="reason-icon">
+            <i class="fas" [ngClass]="reason.icon"></i>
+          </div>
+          <h3>{{ reason.title }}</h3>
+          <p>{{ reason.description }}</p>
+        </div>
+      }
+    </div>
+
+    <div class="final-cta">
+      <h3>Ready to Transform Your Life?</h3>
+      <p>Get in touch today and take the first step forward</p>
+      <div class="cta-buttons">
+        <a [href]="config.contact.phoneLink" class="btn-start">
+          <i class="fas fa-phone"></i> Call Now
+        </a>
+        <a [href]="config.contact.whatsapp" target="_blank" rel="noopener" class="btn-start btn-wa">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

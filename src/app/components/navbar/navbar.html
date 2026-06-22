@@ -1,0 +1,41 @@
+<nav class="navbar">
+  <div class="navbar-top-bar">
+    <div class="navbar-top-text">{{ config.business.name }}</div>
+  </div>
+
+  <div class="navbar-ticker">
+    <div class="ticker-track">
+      @for (msg of config.ticker; track $index) {
+        <span>{{ msg }}</span>
+      }
+      @for (msg of config.ticker; track $index) {
+        <span>{{ msg }}</span>
+      }
+    </div>
+  </div>
+
+  <div class="navbar-container">
+    <div class="logo">
+      <span class="logo-symbol">{{ config.business.logoSymbol }}</span>
+      <span class="brand-name">{{ config.business.shortName }}</span>
+    </div>
+
+    <button class="menu-toggle" [class.active]="isMenuOpen()" (click)="toggleMenu()" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-menu" [class.active]="isMenuOpen()">
+      <li><a href="#home" (click)="closeMenu()">Home</a></li>
+      <li><a href="#about" (click)="closeMenu()">About Us</a></li>
+      <li><a href="#services" (click)="closeMenu()">Services</a></li>
+      <li><a href="#testimonials" (click)="closeMenu()">Reviews</a></li>
+      <li><a href="#contact" (click)="closeMenu()">Contact Us</a></li>
+    </ul>
+
+    <a [href]="config.contact.whatsapp" target="_blank" rel="noopener" class="cta-button nav-cta">
+      <i class="fab fa-whatsapp"></i> Book Consultation
+    </a>
+  </div>
+</nav>

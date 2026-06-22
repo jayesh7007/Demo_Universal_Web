@@ -1,0 +1,59 @@
+<section id="about" class="about">
+  <div class="about-container">
+    <div class="about-header">
+      <span class="section-eyebrow">✦ About Us ✦</span>
+      <h2>About {{ config.owner.name }}</h2>
+      <p class="subtitle">{{ config.business.tagline }} | Trusted Across India &amp; Worldwide</p>
+    </div>
+
+    <div class="about-content">
+      <div class="about-text">
+        <h3>Meet {{ config.owner.name }}</h3>
+        <p class="designation">{{ config.owner.designation }}</p>
+
+        <div class="bio">
+          @for (para of config.owner.bio; track $index) {
+            <p>{{ para }}</p>
+          }
+        </div>
+
+        <div class="expertise-grid">
+          @for (item of config.owner.expertise; track $index) {
+            <div class="expertise-item"><i class="fas fa-check"></i> {{ item }}</div>
+          }
+        </div>
+
+        <div class="cta-row">
+          <a [href]="config.contact.phoneLink" class="cta-link">
+            <i class="fas fa-phone"></i> Schedule Your Consultation
+          </a>
+          <a [href]="config.contact.whatsapp" target="_blank" rel="noopener" class="cta-link cta-wa">
+            <i class="fab fa-whatsapp"></i> WhatsApp Now
+          </a>
+        </div>
+      </div>
+
+      <div class="about-panel">
+        <div class="panel-card challenges-card">
+          <div class="panel-icon"><i class="fas fa-question-circle"></i></div>
+          <h4>Are You Facing These Challenges?</h4>
+          <ul>
+            @for (item of config.owner.challenges; track $index) {
+              <li><i class="fas fa-chevron-right"></i> {{ item }}</li>
+            }
+          </ul>
+        </div>
+
+        <div class="panel-card credentials-card">
+          <div class="panel-icon"><i class="fas fa-award"></i></div>
+          <h4>Qualifications &amp; Recognition</h4>
+          <ul>
+            @for (cred of config.owner.credentials; track $index) {
+              <li><i class="fas fa-star"></i> {{ cred }}</li>
+            }
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -5,8 +5,6 @@ import { Hero } from './components/hero/hero';
 import { Stats } from './components/stats/stats';
 import { About } from './components/about/about';
 import { Services } from './components/services/services';
-import { Problems } from './components/problems/problems';
-import { WhyChooseUs } from './components/why-choose-us/why-choose-us';
 import { Testimonials } from './components/testimonials/testimonials';
 import { Contact } from './components/contact/contact';
 import { Footer } from './components/footer/footer';
@@ -20,8 +18,6 @@ import { SITE_CONFIG } from './site.config';
     Stats,
     About,
     Services,
-    Problems,
-    WhyChooseUs,
     Testimonials,
     Contact,
     Footer,

@@ -1,23 +1,23 @@
-/* Global Styles for Aadishakti Astro & Vastu */
+/* Global styles for the Demo demo experience */
 
 // Import Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cinzel:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 // CSS Variables for easy customization
 :root {
-  --primary-dark: #003857;
-  --primary-gold: #fbffb3;
-  --secondary-orange: #ff0000;
-  --accent-saffron: #ff0000;
-  --light-cream: #fbffb3;
-  --text-dark: #003857;
-  --text-light: #fbffb3;
-  --gray-light: #f5f5f5;
-  --font-primary: 'Poppins', sans-serif;
-  --font-accent: 'Cinzel', serif;
+  --primary-dark: #15132b;
+  --primary-gold: #f4c86b;
+  --secondary-orange: #e87955;
+  --accent-saffron: #e87955;
+  --light-cream: #fffaf3;
+  --text-dark: #15132b;
+  --text-light: #fffaf3;
+  --gray-light: #f3f0f7;
+  --font-primary: 'DM Sans', sans-serif;
+  --font-accent: 'Space Grotesk', sans-serif;
   --transition: all 0.3s ease;
-  --border-light: #f0e6d0;
-  --bg-section-alt: #f9f5ee;
+  --border-light: #e8e2ef;
+  --bg-section-alt: #f8f5fb;
 }
 
 // Reset and base styles
@@ -34,7 +34,7 @@ html {
 
 body {
   font-family: var(--font-primary);
-  background: white;
+  background: var(--light-cream);
   color: var(--text-dark);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -86,7 +86,7 @@ img {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--primary-gold), var(--secondary-orange));
+  background: linear-gradient(180deg, var(--secondary-orange), var(--primary-gold));
   border-radius: 6px;
 
   &:hover {
@@ -96,8 +96,8 @@ img {
 
 // Selection
 ::selection {
-  background: linear-gradient(135deg, var(--primary-gold), var(--secondary-orange));
-  color: var(--primary-dark);
+  background: var(--secondary-orange);
+  color: #fff;
 }
 
 // Focus visible for accessibility
@@ -296,4 +296,60 @@ img {
   &:hover {
     transform: translateY(-2px);
   }
+}
+
+/* Demo theme overrides: keep the component structure reusable while giving
+   this showcase a distinct editorial palette and rhythm. */
+app-stats .stats {
+  background: #fffaf3;
+}
+
+app-about .about,
+app-services .services,
+app-problems .problems,
+app-testimonials .testimonials {
+  background: #f8f5fb;
+}
+
+app-why-choose-us .why-choose-us {
+  background: #fffaf3;
+}
+
+app-about .about-text,
+app-about .panel-card,
+app-services .service-card,
+app-problems .problem-card,
+app-why-choose-us .reason-card,
+app-testimonials .testimonial-card,
+app-stats .stat-card {
+  border-color: #e8e2ef;
+  box-shadow: 0 14px 32px rgba(21, 19, 43, 0.06);
+}
+
+app-about .about-header h2,
+app-services .section-header h2,
+app-problems .section-header h2,
+app-why-choose-us .section-header h2,
+app-testimonials .section-header h2 {
+  color: #15132b;
+}
+
+app-about .section-eyebrow,
+app-services .section-eyebrow,
+app-problems .section-eyebrow,
+app-why-choose-us .section-eyebrow,
+app-testimonials .section-eyebrow {
+  color: #e87955;
+}
+
+app-services .service-icon,
+app-why-choose-us .reason-icon,
+app-why-choose-us .final-cta,
+app-services .services-cta {
+  background: linear-gradient(135deg, #f4c86b 0%, #e87955 100%);
+}
+
+app-services .service-icon i,
+app-why-choose-us .reason-icon i {
+  color: #15132b;
 }

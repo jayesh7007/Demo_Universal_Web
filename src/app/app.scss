@@ -1,9 +1,9 @@
 // Shared color variables (used by app-level template)
-$primary-dark: #003857;
-$secondary-gold: #fbffb3;
-$secondary-orange: #ff0000;
-$text-light: #fbffb3;
-$text-dark: #003857;
+$primary-dark: #15132b;
+$secondary-gold: #f4c86b;
+$secondary-orange: #e87955;
+$text-light: #fffaf3;
+$text-dark: #15132b;
 
 // App host layout
 :host {
@@ -34,12 +34,12 @@ $text-dark: #003857;
 
 .btn-primary {
   background: $secondary-orange;
-  color: #ffffff;
-  box-shadow: 0 10px 28px rgba(255, 0, 0, 0.25);
+  color: #fff;
+  box-shadow: 0 10px 28px rgba(232, 121, 85, 0.25);
 
   &:hover {
-    background: darken($secondary-orange, 8%);
-    box-shadow: 0 16px 36px rgba(255, 0, 0, 0.35);
+    background: #d96848;
+    box-shadow: 0 16px 36px rgba(232, 121, 85, 0.35);
   }
 }
 

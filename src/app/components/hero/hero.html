@@ -1,13 +1,4 @@
 <section id="home" class="hero">
-  <div class="announcement-bar">
-    <div class="announcement-track">
-      <span>{{ config.hero.announcementText }}</span>
-      <span>⭐ {{ config.business.tagline }}</span>
-      <span>{{ config.hero.announcementText }}</span>
-      <span>⭐ {{ config.business.tagline }}</span>
-    </div>
-  </div>
-
   <div class="hero-content">
     <div class="hero-text">
       <p class="eyebrow">{{ config.hero.eyebrow }}</p>
@@ -15,6 +6,11 @@
       <p class="hero-subtitle">{{ config.hero.subtitle }}</p>
 
       <p class="hero-description">{{ config.hero.description }}</p>
+
+      <div class="hero-proof">
+        <span><i class="fas fa-circle-check"></i> 1:1 private sessions</span>
+        <span><i class="fas fa-circle-check"></i> Practical, compassionate guidance</span>
+      </div>
 
       <div class="hero-cta">
         <a [href]="config.contact.phoneLink" class="btn btn-primary">
@@ -31,6 +27,7 @@
       <div class="cosmic-circle">
         <img [src]="config.owner.image" [alt]="config.owner.imageAlt" class="hero-img" onerror="this.style.background='#003857';this.style.display='flex'" />
         <div class="orbit"></div>
+        <!-- <div class="hero-badge"><i class="fas fa-sparkles"></i><span>Make space<br /><strong>for clarity</strong></span></div> -->
       </div>
     </div>
   </div>

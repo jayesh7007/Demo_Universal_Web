@@ -9,7 +9,7 @@ $bg-card: #fff;
 $border-light: #f0e6d0;
 
 .about {
-  padding: 5rem 2rem;
+  padding: 6rem 2rem;
   background: $bg-cream;
 }
 
@@ -20,7 +20,7 @@ $border-light: #f0e6d0;
 
 .about-header {
   text-align: center;
-  margin-bottom: 3.5rem;
+  margin-bottom: 3rem;
 }
 
 .section-eyebrow {
@@ -28,13 +28,13 @@ $border-light: #f0e6d0;
   color: $secondary-orange;
   font-weight: 700;
   font-size: 0.9rem;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 0.75rem;
 }
 
 .about-header h2 {
-  font-size: 2.6rem;
+  font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: 0.75rem;
   color: $primary-dark;
 }
@@ -48,21 +48,28 @@ $border-light: #f0e6d0;
 
 .about-content {
   display: grid;
-  grid-template-columns: 1.4fr 0.9fr;
-  gap: 2.5rem;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 4rem;
   align-items: start;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
 .about-text {
-  background: $bg-card;
-  border: 1px solid $border-light;
-  border-radius: 24px;
-  padding: 2.5rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+  padding: 0.5rem 0;
+}
+
+.about-label {
+  color: $secondary-orange;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
 }
 
 .about-text h3 {
-  font-size: 1.9rem;
+  font-size: 2.2rem;
   margin-bottom: 0.4rem;
   color: $primary-dark;
 }
@@ -77,14 +84,14 @@ $border-light: #f0e6d0;
 .bio p {
   color: $text-medium;
   line-height: 1.9;
-  margin-bottom: 1.1rem;
+  margin-bottom: 0.9rem;
   font-size: 0.97rem;
 }
 
 .expertise-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem;
+  gap: 0.6rem 1.5rem;
   margin: 1.75rem 0 2rem;
 }
 
@@ -92,10 +99,7 @@ $border-light: #f0e6d0;
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  background: $bg-cream;
-  border: 1px solid $border-light;
-  border-radius: 12px;
-  padding: 0.85rem 1rem;
+  padding: 0.55rem 0;
   color: $text-dark;
   font-weight: 500;
   font-size: 0.9rem;
@@ -118,22 +122,22 @@ $border-light: #f0e6d0;
   gap: 0.75rem;
   padding: 0.9rem 1.6rem;
   border-radius: 999px;
-  background: linear-gradient(135deg, $secondary-gold 0%, $secondary-orange 100%);
-  color: $primary-dark;
+  background: $primary-dark;
+  color: #fff;
   font-weight: 700;
   text-decoration: none;
-  box-shadow: 0 12px 30px rgba(255, 91, 27, 0.2);
+  box-shadow: 0 10px 24px rgba(5, 34, 59, 0.16);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   font-size: 0.9rem;
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 16px 40px rgba(255, 91, 27, 0.3);
+    box-shadow: 0 14px 30px rgba(5, 34, 59, 0.24);
   }
 }
 
 .cta-wa {
-  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  background: #25a86b;
   box-shadow: 0 12px 30px rgba(37, 211, 102, 0.22);
 
   &:hover {
@@ -144,15 +148,15 @@ $border-light: #f0e6d0;
 .about-panel {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
 .panel-card {
   background: $bg-card;
   border: 1px solid $border-light;
-  border-radius: 20px;
-  padding: 1.75rem;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 12px 28px rgba(21, 19, 43, 0.06);
 }
 
 .panel-icon {
@@ -162,10 +166,17 @@ $border-light: #f0e6d0;
 }
 
 .panel-card h4 {
-  font-size: 1.1rem;
-  margin-bottom: 1.25rem;
+  font-size: 1.35rem;
+  margin-bottom: 0.8rem;
   color: $primary-dark;
   font-weight: 700;
+}
+
+.panel-copy {
+  color: $text-medium;
+  line-height: 1.7;
+  font-size: 0.92rem;
+  margin-bottom: 1.4rem;
 }
 
 .panel-card ul {
@@ -196,7 +207,7 @@ $border-light: #f0e6d0;
 }
 
 .credentials-card {
-  border-top: 3px solid $secondary-gold;
+  border-top: 4px solid $secondary-gold;
 }
 
 .credentials-card li i {

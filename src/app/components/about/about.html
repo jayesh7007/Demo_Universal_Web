@@ -1,14 +1,15 @@
 <section id="about" class="about">
   <div class="about-container">
     <div class="about-header">
-      <span class="section-eyebrow">✦ About Us ✦</span>
-      <h2>About {{ config.owner.name }}</h2>
-      <p class="subtitle">{{ config.business.tagline }} | Trusted Across India &amp; Worldwide</p>
+      <span class="section-eyebrow">About the astrologer</span>
+      <h2>A thoughtful space for your next chapter</h2>
+      <p class="subtitle">Personal guidance rooted in astrology, delivered with clarity and care.</p>
     </div>
 
     <div class="about-content">
       <div class="about-text">
-        <h3>Meet {{ config.owner.name }}</h3>
+        <p class="about-label">Meet your guide</p>
+        <h3>{{ config.owner.name }}</h3>
         <p class="designation">{{ config.owner.designation }}</p>
 
         <div class="bio">
@@ -19,37 +20,26 @@
 
         <div class="expertise-grid">
           @for (item of config.owner.expertise; track $index) {
-            <div class="expertise-item"><i class="fas fa-check"></i> {{ item }}</div>
+            <div class="expertise-item"><i class="fas fa-check"></i><span>{{ item }}</span></div>
           }
         </div>
 
         <div class="cta-row">
-          <a [href]="config.contact.phoneLink" class="cta-link">
-            <i class="fas fa-phone"></i> Schedule Your Consultation
-          </a>
           <a [href]="config.contact.whatsapp" target="_blank" rel="noopener" class="cta-link cta-wa">
-            <i class="fab fa-whatsapp"></i> WhatsApp Now
+            <i class="fab fa-whatsapp"></i> Start a conversation
           </a>
         </div>
       </div>
 
       <div class="about-panel">
-        <div class="panel-card challenges-card">
-          <div class="panel-icon"><i class="fas fa-question-circle"></i></div>
-          <h4>Are You Facing These Challenges?</h4>
-          <ul>
-            @for (item of config.owner.challenges; track $index) {
-              <li><i class="fas fa-chevron-right"></i> {{ item }}</li>
-            }
-          </ul>
-        </div>
-
         <div class="panel-card credentials-card">
-          <div class="panel-icon"><i class="fas fa-award"></i></div>
-          <h4>Qualifications &amp; Recognition</h4>
+          <div class="panel-icon"><i class="fas fa-sparkles"></i></div>
+          <p class="about-label">Why clients return</p>
+          <h4>Guidance that feels personal</h4>
+          <p class="panel-copy">Every reading is a calm, confidential conversation designed around your questions — not a one-size-fits-all prediction.</p>
           <ul>
             @for (cred of config.owner.credentials; track $index) {
-              <li><i class="fas fa-star"></i> {{ cred }}</li>
+              <li><i class="fas fa-check"></i> {{ cred }}</li>
             }
           </ul>
         </div>

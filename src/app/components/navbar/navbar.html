@@ -1,19 +1,4 @@
 <nav class="navbar">
-  <div class="navbar-top-bar">
-    <div class="navbar-top-text">{{ config.business.name }}</div>
-  </div>
-
-  <div class="navbar-ticker">
-    <div class="ticker-track">
-      @for (msg of config.ticker; track $index) {
-        <span>{{ msg }}</span>
-      }
-      @for (msg of config.ticker; track $index) {
-        <span>{{ msg }}</span>
-      }
-    </div>
-  </div>
-
   <div class="navbar-container">
     <div class="logo">
       <span class="logo-symbol">{{ config.business.logoSymbol }}</span>
@@ -28,10 +13,10 @@
 
     <ul class="nav-menu" [class.active]="isMenuOpen()">
       <li><a href="#home" (click)="closeMenu()">Home</a></li>
-      <li><a href="#about" (click)="closeMenu()">About Us</a></li>
+      <li><a href="#about" (click)="closeMenu()">About</a></li>
       <li><a href="#services" (click)="closeMenu()">Services</a></li>
       <li><a href="#testimonials" (click)="closeMenu()">Reviews</a></li>
-      <li><a href="#contact" (click)="closeMenu()">Contact Us</a></li>
+      <li><a href="#contact" (click)="closeMenu()">Contact</a></li>
     </ul>
 
     <a [href]="config.contact.whatsapp" target="_blank" rel="noopener" class="cta-button nav-cta">
